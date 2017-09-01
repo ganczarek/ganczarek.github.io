@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://ganczarek.github.io/jekyll/update/welcome-to-jekyll/</loc>
+<lastmod>2017-08-31T20:12:50+01:00</lastmod>
+</url>
+<url>
+<loc>https://ganczarek.github.io/</loc>
+</url>
+<url>
+<loc>https://ganczarek.github.io/year-archive/</loc>
+</url>
+<url>
+<loc>https://ganczarek.github.io/tags/taga/</loc>
+</url>
+<url>
+<loc>https://ganczarek.github.io/categories/jekyll/</loc>
+</url>
+<url>
+<loc>https://ganczarek.github.io/categories/update/</loc>
+</url>
+<url>
+<loc>https://ganczarek.github.io/year-archive/2017/</loc>
+</url>
+</urlset>
