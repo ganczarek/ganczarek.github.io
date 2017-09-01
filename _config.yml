@@ -1,14 +1,14 @@
 theme: minimal-mistakes-jekyll
 
 # Site Settings
-locale                   : "en"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+locale                   : "en-GB"
+title                    : ":wq"
+title_separator          : "|"
+name                     : ":wq"
+description              : "Technical blog"
+url                      : "https://ganczarek.github.io"
+baseurl                  : ""
+repository               : "ganczarek/ganczarek.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -18,11 +18,6 @@ comments:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master"
@@ -48,22 +43,16 @@ bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-# Social Sharing
 twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
+  username               : rganczarek
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links                  : # An array of links to social media profiles
 
-# Analytics
 analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
@@ -72,10 +61,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Rafał Ganczarek"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  bio              :
+  location         :
   email            :
   uri              :
   bitbucket        :
@@ -84,23 +73,23 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : ganczarek
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : ganczarek
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
+  stackoverflow    :
+  steam            :
   tumblr           :
-  twitter          :
+  twitter          : rganczarek
   vine             :
   weibo            :
   xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  youtube          :
 
 
 # Reading Files
@@ -201,22 +190,25 @@ whitelist:
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
+  type:  jekyll-archives
   path: /categories/
 tag_archive:
-  type: liquid
+  type:  jekyll-archives
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+ enabled:
+   - year
+   - categories
+   - tags
+ layouts:
+   year: archive-taxonomy
+   category: archive-taxonomy
+   tag: archive-taxonomy
+ permalinks:
+   year: '/year-archive/:year/'
+   category: '/categories/:name/'
+   tag: '/tags/:name/'
 
 
 # HTML Compression
@@ -235,8 +227,8 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
