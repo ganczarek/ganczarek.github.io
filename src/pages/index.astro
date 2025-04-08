@@ -62,24 +62,6 @@ const projects: CollectionEntry<"projects">[] = (
             </ul>
           </section>
         )}
-        <section class="animate space-y-4">
-          <ul class="not-prose flex flex-wrap gap-2">
-            {
-              SOCIALS.map((SOCIAL) => (
-                <li class="flex gap-x-2 text-nowrap">
-                  <Link
-                    href={SOCIAL.HREF}
-                    external
-                    aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`}
-                  >
-                    {SOCIAL.NAME}
-                  </Link>
-                  {"|"}
-                </li>
-              ))
-            }
-          </ul>
-        </section>
       </div>
     </aside>
   </Container>

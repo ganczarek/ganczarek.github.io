@@ -1,6 +1,7 @@
 ---
 import Container from "@components/Container.astro";
 import BackToTop from "@components/BackToTop.astro";
+import Socials from "./Socials.astro";
 ---
 
 <footer class="animate">
@@ -12,6 +13,7 @@ import BackToTop from "@components/BackToTop.astro";
     </div>
     <div class="flex items-center justify-between">
       <div>&copy; {new Date().getFullYear()} | Rafał Ganczarek</div>
+      <Socials />
     </div>
   </Container>
 </footer>
